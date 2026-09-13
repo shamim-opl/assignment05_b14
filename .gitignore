@@ -3,3 +3,6 @@ dist
 dist-ssr
 *.local
 .DS_Store
+
+# Design sources and reference mockups — not part of the app, kept locally only
+design/
