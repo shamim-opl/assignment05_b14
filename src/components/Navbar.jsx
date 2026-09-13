@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logo.png";
+import Logo from "./Logo";
 
 const NAV_LINKS = ["Home", "Technologies", "Projects", "About", "Contact"];
 
@@ -8,13 +8,13 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <nav className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
         {/* Mobile: hamburger */}
         <button
           type="button"
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
-          className="md:hidden -ml-2 p-2 text-slate-700"
+          className="md:hidden -ml-1 p-2 text-slate-700 shrink-0"
           onClick={() => setMenuOpen((open) => !open)}
         >
           <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,8 +25,8 @@ export default function Navbar() {
         </button>
 
         {/* Brand */}
-        <a href="#" className="flex items-center gap-2">
-          <img src={logo} alt="Dev Stack" className="h-8 w-auto" />
+        <a href="#" className="flex items-center gap-2 min-w-0">
+          <Logo className="text-sm sm:text-xl" />
         </a>
 
         {/* Desktop nav links */}
@@ -44,16 +44,16 @@ export default function Navbar() {
         </ul>
 
         {/* Auth buttons */}
-        <div className="flex items-center gap-3 sm:gap-4">
+        <div className="flex items-center gap-2 sm:gap-4 shrink-0">
           <a
             href="#"
-            className="text-sm font-medium text-slate-700 hover:text-slate-900"
+            className="whitespace-nowrap text-xs sm:text-sm font-medium text-slate-700 hover:text-slate-900"
           >
             Sign In
           </a>
           <a
             href="#"
-            className="bg-gradient-brand text-white text-sm font-semibold px-4 sm:px-5 py-2 rounded-full hover:opacity-90 transition-opacity whitespace-nowrap"
+            className="whitespace-nowrap bg-gradient-brand text-white text-xs sm:text-sm font-semibold px-3 sm:px-5 py-2 rounded-full hover:opacity-90 transition-opacity"
           >
             Sign Up
           </a>

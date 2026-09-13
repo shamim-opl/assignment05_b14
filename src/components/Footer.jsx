@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import Logo from "./Logo";
 
 const LINK_GROUPS = [
   { title: "Product", links: ["Home", "Technologies", "Projects"] },
@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="border-t border-slate-100 mt-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 grid gap-10 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
         <div>
-          <img src={logo} alt="Dev Stack" className="h-8 w-auto" />
+          <Logo />
           <p className="mt-4 text-sm text-slate-500 max-w-xs">
             Curated tools, technologies, and resources for developers building modern
             software.
