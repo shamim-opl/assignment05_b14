@@ -20,14 +20,14 @@
     "badge": "Versatile"
   },
   {
-    "id": "svelte",
-    "name": "Svelte",
-    "category": "Frontend",
-    "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Svelte.svg",
-    "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "Fast"
+    "id": "express",
+    "name": "Express",
+    "category": "Backend",
+    "description": "A minimal and flexible Node.js web framework for building APIs and server-side apps.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Express.svg",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Minimal"
   },
   {
     "id": "nextjs",
